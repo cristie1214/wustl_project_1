@@ -100,7 +100,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - You will update the host file with the IP addresses of the virtual machines you want Ansible to run the playbook on.  Within the host file there are webservers listed that can be specified to Filebeat and Elk servers that Elk would be installed on. 
 - In order to ensure the Elk server is running you would navigate to URL 20.94.248.50:5601 
 
-**Bonus** The commands needed to download the playbook, update the files, etc. are:
+**Bonus:** The commands needed to download the playbook, update the files, etc. are:
  - ssh into your ansible container and start docker docker start *container name* (if not on machine install docker: apt install docker)
  - create a filebeat-config.yml in your container using nano filebeat-config.yml 
  - a filebeat-playbook.yml would then be created also using nano filebeat-playbook.yml
