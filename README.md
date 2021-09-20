@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [Ansible/metricbeat-playbook.yml](https://github.com/cristie1214/wustl_project_1/blob/56fb129b66beb90f3f01c3af32fed96511a8cbc5/Ansible/metricbeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -24,11 +24,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient, in addition to restricting high-traffic to the network.
-- Load Balancers manage the flow of traffic between the server and the endpoint to prevent server overloading which ensures accessability and helps prevent DDos attacks.   The advantage of a jump box is so that IT administrators can have controlled access between networks.
+- Load Balancers manage the flow of traffic between the server and the endpoint to prevent server overloading which ensures accessibility and helps prevent DDos attacks.   The advantage of a jump box is so that IT administrators can have controlled access between networks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 - Filebeat watches for log files that you specify, collects the log events, and then forwards them to Elasticsearch or Logstash for indexing.
-- Metricbeat records the metrics and statistics and shipd them to either Elasticsearch or Logstash.
+- Metricbeat records the metrics and statistics and ships them to either Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -95,7 +95,6 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-configuration.yml file to include the Elk private IP address in lines 1106 and 1806.
 - Run the playbook, and navigate to URL 20.94.248.50:5601 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - filebeat-playbook.yml is the playbook file that is copied /etc/ansible/
 - You will update the host file with the IP addresses of the virtual machines you want Ansible to run the playbook on.  Within the host file there are webservers listed that can be specified to Filebeat and Elk servers that Elk would be installed on. 
 - In order to ensure the Elk server is running you would navigate to URL 20.94.248.50:5601 
@@ -104,4 +103,4 @@ _TODO: Answer the following questions to fill in the blanks:_
  - ssh into your ansible container and start docker docker start *container name* (if not on machine install docker: apt install docker)
  - create a filebeat-config.yml in your container using nano filebeat-config.yml 
  - a filebeat-playbook.yml would then be created also using nano filebeat-playbook.yml
- - to run the playbook you use the absolute path or run from the directory the playbook is located in with the command: ansible-playbook filebeat-playbook.yml
+ - to run the playbook, you use the absolute path or run from the directory the playbook is located in with the command: ansible-playbook filebeat-playbook.yml
