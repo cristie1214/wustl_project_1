@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Red Team Cloud Network Diagram.drawio.png
+[Diagrams/Red Team Cloud Network Diagram.drawio.png](https://github.com/cristie1214/wustl_project_1/blob/994722b1424131d379db4c4cfa926772b2274582/Diagrams/Red%20Team%20Cloud%20Network%20Diagram.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
