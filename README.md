@@ -64,10 +64,9 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- SSH into the Jump Box
-- Start the ansible docker container
+- An Elk VM needs to be created 
 - Add the Elk VM to the host file and create a new playbook for the Elk machine
-- Download and run elk to launch the Elk container sebp/elk:761
+- Download and run elk to launch the Elk container
 - SSH into the Elk container and verify it is running
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -96,7 +95,7 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - filebeat-playbook.yml file to /etc/ansible/
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+-You will update the host file with the IP addresses of the virtual machines you want Ansible to run the playbook on.  Within the host file there are webservers listed that can be specified to Filebeat and Elk servers that Elk would be installed on. 
 In order to ensure the Elk server is running you would navigate to URL 20.94.248.50:5601 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
