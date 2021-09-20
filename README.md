@@ -6,7 +6,9 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [Ansible/my-playbook.yml](https://github.com/cristie1214/wustl_project_1/blob/fa42475ec410b363ab5a1d16b96aaf476e0e69a6/Ansible/my-playbook.yml)
+  - [Ansible/elk.yml](https://github.com/cristie1214/wustl_project_1/blob/56fb129b66beb90f3f01c3af32fed96511a8cbc5/Ansible/elk.yml)
+  - [Ansible/filebeat.-playbook.yml](https://github.com/cristie1214/wustl_project_1/blob/56fb129b66beb90f3f01c3af32fed96511a8cbc5/Ansible/filebeat.-playbook.yml)
+  - [Ansible/metricbeat-playbook.yml](https://github.com/cristie1214/wustl_project_1/blob/56fb129b66beb90f3f01c3af32fed96511a8cbc5/Ansible/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -64,7 +66,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- An Elk VM needs to be created 
+- An Elk VM needs to be created and docker installed
 - Add the Elk VM to the host file and create a new playbook for the Elk machine
 - Download and run elk to launch the Elk container
 - SSH into the Elk container and verify it is running
