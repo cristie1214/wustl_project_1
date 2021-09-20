@@ -25,7 +25,7 @@ Load balancing ensures that the application will be highly efficient, in additio
 - Load Balancers manage the flow of traffic between the server and the endpoint to prevent server overloading which ensures accessability and helps prevent DDos attacks.   The advantage of a jump box is so that IT administrators can have controlled access between networks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- Filebeat watches for log fiels that you specify, collects the log events, and then forwards them to Elesticsearch or Logstash for indexing.
+- Filebeat watches for log files that you specify, collects the log events, and then forwards them to Elasticsearch or Logstash for indexing.
 - Metricbeat records the metrics and statistics and shipd them to either Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
