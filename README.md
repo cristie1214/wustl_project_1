@@ -6,7 +6,7 @@ Diagrams/Red Team Cloud Network Diagram.drawio.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - [Ansible/my-playbook.yml](https://github.com/cristie1214/wustl_project_1/blob/fa42475ec410b363ab5a1d16b96aaf476e0e69a6/Ansible/my-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
