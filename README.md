@@ -46,7 +46,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - 40.76.227.8
 
 Machines within the network can only be accessed by Jump Box.
-- The Jumo Box is the machine allowed to access the Elk VM.  The Jump Box IP address is 10.0.0.4
+- The Jump Box is the machine allowed to access the Elk VM.  The Jump Box IP address is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -98,7 +98,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 -You will update the host file with the IP addresses of the virtual machines you want Ansible to run the playbook on.  Within the host file there are webservers listed that can be specified to Filebeat and Elk servers that Elk would be installed on. 
 In order to ensure the Elk server is running you would navigate to URL 20.94.248.50:5601 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ The commands needed to download the playbook, update the files, etc. are:
+The commands needed to download the playbook, update the files, etc. are:
  - ssh into your ansible container and start docker docker start *container name* (if not on machine install docker: apt install docker)
  - create a filebeat-config.yml in your container using nano filebeat-config.yml 
  - a filebeat-playbook.yml would then be created also using nano filebeat-playbook.yml
